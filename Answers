@@ -1,0 +1,20 @@
+1. Are you using Azure and data flask?  
+2. Tell about your Experience and data bricks azure data factory  
+3. Do you have real-time experience in real-time data injection? how do you use it  
+4. For data storage and injection what you used? 
+5. Role of partition in Event hub? 
+6. What is data skewness in the big data world and how do we avoid data skewness in a 
+dedicated SQL pool how can we ensure not to have data skewness in synapse? 
+7. Distribution in dedicated data pool? explain  
+8. Tell me about the hash key column  
+9. What is a partition key? 
+10. I have data from the past 5 years how do I partition this easily? 
+11. Azure Synapse – create a sample pipelining that brings in the S3 bucket where you will 
+save s3 Bucket credentials. 
+12. Unstructured data to structured format? how do you do this  
+13. Trigger a pipeline with columns  
+14. Different kinds of triggers you used  
+15. When you use thumb ling window triggers? how you use it  
+16. Give some data wrangling functions in data ranges  
+17. How to store data in data bricks give me a code and explain  
+18. Azure data storage - need to react CSV files from spark? 
