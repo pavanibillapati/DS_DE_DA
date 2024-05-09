@@ -1,7 +1,59 @@
 1. Are you using Azure and data flask?  
+   => Flask is a lightweight web framework for Python, it is typically used for building web applications, API's or Microservices. 
+   => Flask makes web development quick & easy & has ability to scale up to complex applications.
+   => It is known for it's simplicity & minimalism, allowing users to development web applications with just few lines of code.
+
+  I have used Flask for development of Restful API's & microservices primarily in the context of DE tasks such as data processing, transformation & Integration purposes.
+  I have packaged Restful Api's in Docker or Kubernetes using Jenkins
+
+
 2. Tell about your Experience and data bricks azure data factory  
+    ADF
+    I have used ADF in creating Data Pipelines to extract, transform & load from multiple sources into Azure storage services such as Azure data lake, 
+    Azure Storage, Azure SQL, Azure datawarehouse.
+    I have created pipelines in ADF using linked services, datasets & activities to orchestate data movement & transformation tasks.
+    Created pipelines for Data ingestion from multiple sourcces such as Azure Blob Storage, Azure SQL, Azure Data warehouse
+
+    DataBricks
+    It is Unified Analytics platform built on top of Apache spark for developing spark applications using pySpark & Spark SQL.
+    Used in developing spark application to extract, transform & aggregate from multiple sources, enabling analysis & uncovering insights into customer requirements.
+    Experience in performance tuning spark applications including setting batch interval time, parallelism, memory tuning to optimize data processing performance.
+    Also have experience in estimating cluster sizes, monitoring & trouble shooting spark DataBricks clusters 
+
 3. Do you have real-time experience in real-time data injection? how do you use it  
+   For real time data injection, I have used Kafka which is a distributed streaming platform & spark which is a component of Apache spark for real-time data processing.
+   I have used Kafka for ingesting real time streaming data & spark streaming to process & analyse these streams in near real time.
+   Have implemented lambda architectures where both batch & real time data processing are combined to handle large volumes of data with low latency.
+
+   In Fiserv, I have implemented spark streaming to receive real time data streams from Apache Kafka & store the stream data in HDFS(Hadoop distributed file system).
+   I have used real-time data ingestion & processing for various use cases such as monitoring real-time events, analysing customer behavior in real-time, or 
+  performing real-time fraud detection.
+   I have worked with spark streaming micro batching techniques to process & analyse real-time data streams efficiently.
+   I have also utilized Kafka connectors to integrate kafka with other data storage & processing systems for seamless real-time data flow.
+   Used these technologies to handle streaming data from various sources enabling real-time analytics, monitoring, & decision making.
+
 4. For data storage and injection what you used? 
+
+  AWS 
+  S3: Used for the storage of structured & unstructured data & also as a staging area for ingestion & processing
+  Redshift: Used for large scale data migration efforts & also as a datawarehousing solution.
+  Dynamo DB: Employed for storing noSQL databases & as a part of serverless architectures for data intensive applications
+  Glue: Used for ETL purposes & to migrate campgain data & data ingestion
+  EMR: Used to run Mpareduce jobs & testing locally using Jenkins
+  RDS: used for relational database storage & management 
+
+  Azure:
+  Azure Blob storage: Used for storage purposes in Azure for data ingestion pipelines or for general storage purposes.
+  Azure Data Lake: Used for storing large volumes of data in distributed file system for big data analytics & processing.
+  Azure SQL: Utilised for storage of structured data & for database solutions.
+  Azure Data Factory: Used for orchestrating data movement & for ETL processes including extract transform & load data from various sources
+  Databricks: Used for developing & optimising spark based data processing workflows for relatime data ingestion & analytics.
+  Azure Synapse: Used for datawarehousing solutions & for analytical purposes.
+
+  Snowflake: Used for datawarehousing & micro-batching to ingest millions of files when arrived in staging area.
+  Kafka: Used for real-time data streaming & as part of data ingestion pipelines.
+  Hadoop/HDFS: Used for distributed storage & processing of large datasets
+
 5. Role of partition in Event hub? 
 6. What is data skewness in the big data world and how do we avoid data skewness in a 
 dedicated SQL pool how can we ensure not to have data skewness in synapse? 
