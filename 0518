@@ -1,0 +1,81 @@
+1. Difference between Data lake & data warehouse?
+  Both are used to store & manage large volumes of data.
+
+  Data lake: 
+  stores raw, structured, semi-structured or unstructured data. 
+  centralised repository where any format data can be stored without any predefined schemas or transformations
+  used for exploratory analysis, ml, ds & adhoc-querying.
+
+  Data warehouse
+  optimised for storing structured data & processed data from various sources
+  integrates data from different sources, transforms & loads it based on predefined schema
+  used for BI, decision making & reporting
+
+2. How did you use the unity catalog?
+
+  Unity catalog is a unified goverance platform for data & AI within databricks. With utility catalog organisations can seemlessly govern both structured &unstructured data,
+ML models, notebooks, dashboards & files on any platform or cloud
+
+3. difference between terminate & intermediate operation?
+
+  Intermediate operations - 
+  Operations that are involve transformations & processing steps that modify data in some way
+  Occur within the pipeline like filtering, transform, aggregate, or modify the data within the pipeline.
+  ex: cleaning, filtering, transforming data formats, aggregating & joining the datasets.
+
+  Terminate operations -
+  Operations that are performed to conclude the data processing pipeline & produce final output.
+  these occur while storing the processed data, generating reports, triggering downstream processes on processed data
+  ex: storing the processed data in database or data warehouse, writing data to files or external system, generating reports or visualizations 
+      or triggering notifications or alerts
+
+4. How do you use the lambda functions in aws?
+  Lambda functions are serverless compute services allowing users to run code without provisioning or managing servers.
+
+5. Explain about the data governance & data visualization?
+   Data governance refers overall management of availabilty, usuability, integrity & security of data within an organisation. It involves defining policies, processes & 
+standards to ensure data is properly managed throughout its lifecycle.
+
+  Data visualization involves representating data graphically to get insights, identify patterns & communicate info effectively. 
+  transforms raw data into visual representations such as graphs, tables, charts, dashboards to understand & intrepret data effectively. 
+
+6. Explain data ingestion & data transformation?
+   Data ingestion is the process of collecting and importing data from various sources into a storage or processing system, 
+where it can be further analyzed, processed, or stored.
+
+Data transformation is the process of converting, manipulating, or enriching data to make it suitable for analysis, reporting, or other downstream applications.
+
+7. How will you read the blob storage in pyspark?
+  Using spark.read.csv(f"wasbs://<contianer_name>@<storage_account_name>.blob.core.windows.net/<blob_file_path>")
+
+8. Can you give syntax for reading blob storage files into data frames?
+   spark.read.csv(f"wasbs://<contianer_name>@<storage_account_name>.blob.core.windows.net/<blob_file_path>")
+    or
+   spark.read.format("csv").option('header', 'True').load(f"wasbs://<contianer_name>@<storage_account_name>.blob.core.windows.net/<blob_file_path>")
+
+9. How will you run sql query on top of dataframe?
+   df.createOrReplaceTempView('table_name')
+   result_df = spark.sql("select * from table_name")
+   result_df.show()
+
+  or 
+
+  df.createOrReplaceGlobalTempView('table_name')
+   result_df = spark.sql("select * from global_tables.table_name")
+   result_df.show()
+
+10. ETL or ELT process which one do you opt for complex transformations & why ?
+  In traditional ETL approach, transformations are typically performed within an ETL tool or middleware layer before loading the data into target data warehouses
+(complex transformation, typical image data cleansing, enrichments, aggregations and business logics) 
+ETL tools you may encounter scalability challenges when processing large volumes of data or complex transformation logics as well as processing bottlenecks and 
+resource limitations can impact performance especially for highly distributed or parallelized transformations. 
+And complex transformations may require multiple passes over the data in ETL, increasing the processing time and resource consumption 
+and it can be cost effective like it can cost you like upfront licensing for the ETL tools. 
+
+On the other hand, if I talk to you about the ELT approach
+data is loaded into the target data warehouse first and transformations are performed directly within the data warehouse using SQL based processing capabilities. 
+So complex transformations are expressed as SQL queries or stored procedures executed against the raw data in the Data Warehouse. 
+So ELT typically leverages the scalability and parallel processing capabilities of modern data warehouse to handle the complex transformations.
+Also ELT processing benefits from in database processing and parallel execution minimizing the data movement 
+and optimizing query performance and ELT solutions can be more cost effective than ETL solutions for complex transformations 
+as the eliminate the need for separate ETL middle layer and infrastructure.
