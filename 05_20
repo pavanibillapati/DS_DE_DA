@@ -1,0 +1,15 @@
+1. Difference between a data lake and a data warehouse?
+2. How did you use the unity catalog?
+3. Explain Databricks cluster?
+4. Explain about Kubernetes?
+5. Explain about delta tables?
+6. Do you have experience with AWS glue and data bricks?
+7. Do you have used Kafka?
+8. Discuss Data migration & transformation using Azure services?
+9. Difference between Rest controller & Request mapping?
+10. Drawbacks of lambda?
+
+Coding:
+1.	Write a Python script using Pandas to calculate the total sales for each product category from a CSV file with columns category and sales?
+2.	Write a PySpark script to load JSON data from Azure Blob Storage into a DataFrame?
+3.	Write a PySpark script to consume messages from a Kafka topic and process the data?
