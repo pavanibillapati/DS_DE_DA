@@ -1,7 +1,29 @@
 1. Difference between a data lake and a data warehouse?
+
 2. How did you use the unity catalog?
+
+  https://www.linkedin.com/pulse/how-use-databricks-unity-catalog-microsoft-purview-data-governance-xefvf/
+  
+  Databricks is an unified analytics platform built on Apache spark offering a centralised storage, efficient metadata management & 
+seemless collabaration within databricks environment.
+
 3. Explain Databricks cluster?
+   set of computation resources and configurations that run data processing tasks in the Databricks environment. 
+Clusters are the fundamental unit of computation in Databricks and serve several purposes, including data analytics, machine learning, and ETL 
+
+Components:
+a. driver node - assigns tasks to driver nodes, stores metadata & get results from worker nodes.
+b. Driver nodes - executes the tasks assigned & stores data.
+c. cluster manager - responsible for start, stop & scaling of cluster nodes.
+
 4. Explain about Kubernetes?
+  Kubernetes is an open-source platform designed for deployment, scaling & operation of containerised applications.
+  originally developed by  Google & now managed by cloud native computing foundation(CNCF)
+  provides a robust & flexible framework to manage complex applications efficiently across various environments from on-premise to cloud infrastructures.
+  
+
+
+
 5. Explain about delta tables?
 6. Do you have experience with AWS glue and data bricks?
 7. Do you have used Kafka?
