@@ -21,10 +21,9 @@ c. cluster manager - responsible for start, stop & scaling of cluster nodes.
   originally developed by  Google & now managed by cloud native computing foundation(CNCF)
   provides a robust & flexible framework to manage complex applications efficiently across various environments from on-premise to cloud infrastructures.
   
-
-
-
 5. Explain about delta tables?
+  Delta lake is a key feature of data lake, is an open source storage layer that brings reliabilty to delta lakes.
+  
 6. Do you have experience with AWS glue and data bricks?
 7. Do you have used Kafka?
 8. Discuss Data migration & transformation using Azure services?
